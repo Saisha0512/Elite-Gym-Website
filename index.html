@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Gym</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url('Gym BG.jpg') no-repeat center center/cover;
+        }
+        
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .left {
+            display: flex;
+            align-items: center;
+        }
+        .left img {
+            width: 120px;
+            margin-right: 10px;
+        }
+        .left div {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        
+        /* Navigation Bar with Dropdown */
+        .mid {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar {
+            list-style: none;
+            display: flex;
+        }
+        .navbar li {
+            position: relative;
+            margin: 0 15px;
+        }
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar li a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+        
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: yellow;
+            color: black;
+        }
+        .navbar li:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Buttons */
+        .right {
+            display: flex;
+            align-items: center;
+        }
+        .btn {
+            background: yellow;
+            color: black;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .btn:hover {
+            background: orange;
+        }
+        
+        /* Form Section */
+        .container {
+            border: 2px solid white;
+            margin: 80px auto;
+            padding: 50px;
+            width: 40%;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: transparent;
+            color: white;
+            text-align: center;
+        }
+        .container button {
+            width: 80%;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        /* Footer Section */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: yellow;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header of the Gym Webpage -->
+    <header class="header">
+        <div class="left">
+            <img src="gym logo.webp" alt="Elite Gym">
+            <div>Elite Gym</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Trainers</a>
+                        <a href="#">Our Story</a>
+                    </div>
+                </li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    
+    <!-- Form for joining the Gym -->
+    <div class="container">
+        <h1>Join the Best Gym Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Elite Gym | XYZ Street, Punjabi Bagh, New Delhi | Contact: +91 4562856377</p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>
