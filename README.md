@@ -11,11 +11,11 @@ The **Elite Gym Website** is a modern and responsive web application designed to
 - **Footer Section** with social media links
 - **Responsive Design** for a seamless experience across devices
 
-## 🌟Demo
+## 🌟Website Preview
 ![image](https://github.com/user-attachments/assets/3974a2d5-44a1-4127-bf91-427429c1aa97)
 
 
-## 🔧 Lnaguages Used
+## 🔧 Languages Used
 1. HTML – For structuring the web pages.
 2. CSS – For styling and layout design.
 
