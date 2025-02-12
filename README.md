@@ -23,7 +23,7 @@ The **Elite Gym Website** is a modern and responsive web application designed to
 https://saisha0512.github.io/Elite-Gym-Website/
 
 ## 📬 Contact
-For any inquiries, reach out via:
+For any inquiries, reach out via :
 - 📧 Email: saishaverma0512@gmail.com
 - 🔗 LinkedIn: https://www.linkedin.com/in/saishaverma0512
 
